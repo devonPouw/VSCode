@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+            outline: none;
+        }
+        .nav{
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: row wrap;
+            height: 20vh;
+        }
+        .nav > img{
+            justify-content: flex-start;
+            height: auto;
+            width: auto;
+        }
+        .container{
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: row wrap;
+            height: 200vh;
+            width: auto;
+        }
+        .square{
+            justify-content: space-evenly;
+            background-color: aqua;
+            width: 5vw;
+            height: 5vh;
+        }
+        .unit1{
+            flex-grow: 1;
+        }
+        .unit2{
+            flex-grow: 1;
+        }
+        .unit3{
+            flex-grow: 1;
+        }
+        .unit4{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <img src="../images/forest.jpg" alt="bos">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="square unit1"></div>
+                <div class="square unit2"></div>
+                <div class="square unit3"></div>
+                <div class="square unit4"></div>
+            </div>
+        </section>
+        <aside>
+            <div class="aside-div"></div>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+        .divInLine{
+            display: inline;
+            width: 500px;
+            height: 500px;
+        }
+        .divInLineBlock{
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+        }
+        .imageWrapper{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .imageWrapper > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .playButton{
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-color: red;
+        }
+        .absoluteCenter{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .playIcon{
+            width: 0;
+            height: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid black;
+        }
+        .nav{
+            width: 100%;
+            height: 60px;
+            background-color: bisque;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+
+        aside{
+            height: 100%;
+            width: 200px;
+            background-color: rgb(244, 100, 148);
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 99;
+            padding-top: 200px;
+        }
+        .asideDiv{
+            position: sticky;
+            top: 60px;
+            width: 100%;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav"></div>
+
+        <div class="container">
+            <p>paragraaf</p>
+            <a href="">een link</a>
+            <a href="">ook een link</a>
+            <div class="divInLine">een div inline</div>
+            <div class="divInLineBlock">een div inline block</div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h2>Awesome heading 2</h2>
+                <div class="imageWrapper">
+                    <img src="../images/forest.jpg" alt="bos">
+                    <div class="playButton absoluteCenter">
+
+                    </div>
+                    <div class="playIcon absoluteCenter">
+
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <aside>
+<div class="asideDiv"></div>
+    </aside>
+</body>
+</html>
