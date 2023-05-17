@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+        }
+
+        header,
+        section {
+            padding: 100px 0;
+        }
+        
+        img{
+            max-width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        .flexbox {
+            display: flex;
+            
+            gap: 80px;
+        }
+
+        .flexitem{
+            width: 200px;
+            height: 200px;
+        }
+
+        .geen-objectfit-cover > img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+
+        .objectfit-cover > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .objectfit-contain > img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        header{
+            color:whitesmoke;
+            font-size: 2rem;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .video-background-wrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: -1;
+        }
+        .video-background-wrapper video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Media is geweldig</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi id sit deleniti, et unde modi
+                minus ratione impedit eligendi a necessitatibus nisi quia esse, alias, aliquid error! Ea, fuga.</p>
+        </div>
+        <div class="video-background-wrapper">
+            <video autoplay muted controls>
+                <source src="../videos/mp4file.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <figure>
+                    <img src="../images/forest.jpg" alt="bos">
+                    <figuretag>Afbeelding1: Landschap</figuretag>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="flexbox">
+                    <div class="flexitem geen-objectfit-cover">
+                        <img src="../images/dwayne2.webp" alt="dwayne the rock">
+                    </div>
+                    <div class="flexitem objectfit-cover">
+                        <img src="../images/dwayne2.webp" alt="dwayne the rock">
+                    </div>
+                    <div class="flexitem objectfit-contain">
+                        <img src="../images/dwayne2.webp" alt="dwayne the rock">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

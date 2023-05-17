@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Rubik', Arial, sans-serif;
+        }
+
+        section {
+            padding: 100px 0px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+
+        p {}
+
+        .heading1 {
+            font-size: 6em;
+            line-height: 1.04;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: all 2s;
+        }
+
+        .heading1:hover {
+            transform: scale(1.5);
+            background-image: url(../images/test.gif);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+        }
+
+        .heading2 {
+            color: blue;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px navy;
+        }
+        .fontpair-wrapper{
+            padding: 100px 120px;
+            min-height: 100vh;
+        }
+        .pair1{
+            background-image: url(../images/gogh.jpeg);
+            background-size: cover;
+            position: relative;
+        }
+        .pair1 h2{
+            font-family: 'Raleway', sans-serif;
+            font-size: 8rem;
+            font-weight: 800;
+            line-height: 0.92;
+            color: whitesmoke;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .pair1 h2 i{
+            font-family: 'Dancing Script', cursive;
+        }
+        .brand-color{
+            color: yellow;
+        }
+        .pair1 p{
+            font-size: 2rem;
+            font-family: 'Nunito Sans', sans-serif;
+            max-width: 400px;
+            margin-left: auto;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            color: whitesmoke;
+            text-shadow: 1px 1px 0 grey;
+        }
+    </style>
+    <link rel="stylesheet" href="google-fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="heading1">Text properties are awesome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, natus!</p>
+                <a href="">Lees meer</a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="heading2">Text shadow</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, natus!</p>
+                <a href="">Lees meer</a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="fontpair-wrapper pair1">
+                    <h2>Stap in<br>
+                        <i>de wereld</i><br>
+                        van<br>
+                        <span class="brand-color">van Gogh</span>
+                    </h2>
+                    <p>Vincent Willem van Gogh was een Nederlands kunstschilder. Zijn werk valt onder het
+                        postimpressionisme, een kunststroming die het negentiende-eeuwse impressionisme opvolgde.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

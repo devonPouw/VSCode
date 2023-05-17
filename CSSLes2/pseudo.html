@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            display: block;
+            padding: 20px;
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: lightblue;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: aqua;
+        }
+
+        a:active {
+            color: red;
+        }
+        .card{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            margin: 20px;
+            box-shadow: 10px 10px 8px blue;
+            transition: all 0.5s ease-in-out;
+
+        }
+        a:hover .card{
+            box-shadow: -10px -10px 8px red;
+            scale: 1.2;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.nl">Google</a></li>
+                <li><a href="https://www.bing.nl">Bing</a></li>
+                <li><a href="https://www.nu.nl">Nieuws</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <a href="https://www.google.nl">
+            <div class="card"></div>
+        </a>
+    </main>
+</body>
+
+</html>
