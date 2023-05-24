@@ -142,3 +142,9 @@ transition: 1s ease-in-out;
   .box .filler{
     flex-grow: 1;
   }
+  .container2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
