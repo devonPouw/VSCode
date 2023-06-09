@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+        <div class="welcome">
+                <div>
+                    <span class="message">Let's play music: <span id="name"></span></span>
+                </div>
+                <div class="open-button">
+                    <button class="open-button" onclick="openForm()">Change name</button>
+                </div>
+                <div class="form-popup" id="myForm" >
+                    <form action="/action_page.php" class="form-container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+                <button type="submit" class="btn">Change</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>  
+                </div>
+        </div>
+        <div class="sound-choice">
+           <div class="sound sound1">
+            <button class="soundpack soundpack1">soundpack1</button >
+           </div>
+           <div class="sound sound2">
+            <button  class="soundpack soundpack2">soundpack2</button >
+           </div>
+           <div class="sound sound3">
+            <button  class="soundpack soundpack3">soundpack3</button>
+           </div>
+        </div>
+        <div class="soundboard">
+            <div class="sound-button div1"><span class="keyboard">Q</span></div>
+            <div class="sound-button div2"><span class="keyboard">W</span></div>
+            <div class="sound-button div3"><span class="keyboard">E</span></div>
+            <div class="sound-button div4"><span class="keyboard">A</span></div>
+            <div class="sound-button div5"><span class="keyboard">S</span></div>
+            <div class="sound-button div6"><span class="keyboard">D</span></div>
+            <div class="sound-button div7"><span class="keyboard">Z</span></div>
+            <div class="sound-button div8"><span class="keyboard">X</span></div>
+            <div class="sound-button div9"><span class="keyboard">C</span></div>
+        </div>
+    </div>
+    </div>
+    <script src="./drums.js"></script>
+</body>
+</html>
