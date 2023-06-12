@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="main">
-        <div class="container">
-        <div class="welcome">
+<div class="main">
+    <div class="container">
+            <div class="welcome">
                 <div>
                     <span class="message">Let's play music: <span id="name"></span></span>
                 </div>
                 <div class="open-button">
-                    <button class="open-button" onclick="openForm()">Change name</button>
+                    <button id="change-name" class="open-button" onclick="openForm()">Change name</button>
                 </div>
                 <div class="form-popup" id="myForm" >
-                    <form action="/action_page.php" class="form-container">
+                    <form class="form-container" action="javascript:void(0);" onsubmit="formFunction(); location.reload();">
                 <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
+                <input id="username" type="text" placeholder="Enter Name" name="name" required>
                 <button type="submit" class="btn">Change</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                     </form>  
                 </div>
-        </div>
+            </div>
         <div class="sound-choice">
            <div class="sound sound1">
             <button class="soundpack soundpack1">soundpack1</button >
@@ -38,18 +38,18 @@
            </div>
         </div>
         <div class="soundboard">
-            <div class="sound-button div1"><span class="keyboard">Q</span></div>
-            <div class="sound-button div2"><span class="keyboard">W</span></div>
-            <div class="sound-button div3"><span class="keyboard">E</span></div>
-            <div class="sound-button div4"><span class="keyboard">A</span></div>
-            <div class="sound-button div5"><span class="keyboard">S</span></div>
-            <div class="sound-button div6"><span class="keyboard">D</span></div>
-            <div class="sound-button div7"><span class="keyboard">Z</span></div>
-            <div class="sound-button div8"><span class="keyboard">X</span></div>
-            <div class="sound-button div9"><span class="keyboard">C</span></div>
+            <div class="sound-button div1"><button class="keyboard" id="keyboard-key">Q</button></div>
+            <div class="sound-button div2"><button class="keyboard" id="keyboard-key">W</button></div>
+            <div class="sound-button div3"><button class="keyboard" id="keyboard-key">E</button></div>
+            <div class="sound-button div4"><button class="keyboard" id="keyboard-key">A</button></div>
+            <div class="sound-button div5"><button class="keyboard" id="keyboard-key">S</button></div>
+            <div class="sound-button div6"><button class="keyboard" id="keyboard-key">D</button></div>
+            <div class="sound-button div7"><button class="keyboard" id="keyboard-key">Z</button></div>
+            <div class="sound-button div8"><button class="keyboard" id="keyboard-key">X</button></div>
+            <div class="sound-button div9"><button class="keyboard" id="keyboard-key">C</button></div>
         </div>
     </div>
-    </div>
+</div>
     <script src="./drums.js"></script>
 </body>
 </html>
